@@ -2,16 +2,52 @@
 
 Captures context from a native iOS application and uploads it to Smartling's translation management system.
 
-## Translation Context
+## Translation Context for iOS
 
-Smartling provides the capability to capture native application views and render them as an HTML document. The resulting HTML document is sent to the the HTML Context API to be associated with a customer's content.
+Smartling Context Kit provides the capability to capture native iOS application views and render and associate those views with 
+## Getting Started
 
-## High Level Architecture
+If you don't yet have a Smartling account, sign up at [Smartling.com](http://www.smartling.com).
 
-To capture context, the following components are required:
+### Add a Smartling Properties File to Your Project
 
-1. Smartling Context Framework (this project) - native iOS framework that captures context by walking the currently displayed view hierarchy and creating a JSON representation of the views.
-2. MDN servers - Spring Boot / JDK 8 based service comprised of public endpoints and Java code capable of ingesting the data produced by the Smartling Context Framework and rendering an HTML document the represents the native view.
-3. MongoDB - Used to store context as a document and related image files in a GridFS data store.
-4. HTML Context Endpoint (already in production) receives HTML context produced by the MDN and associates context with customer's project.
+Create file named Smartling.plist in your main project. The contents should be similar to this:
 
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>captureEnabled</key>
+	<true/>
+	<key>apiKey</key>
+	<string>your-key-here</string>
+	<key>projectId</key>
+	<string>your-project-id-here</string>
+</dict>
+</plist>
+```
+
+_Note: You can find your Project Id and API Key under [Project Settings -> API][dashboard] in the Smartling Dashboard._
+
+## Installation
+
+### CocoaPods (Recommended)
+
+[CocoaPods][cocoapods] is a dependency manager for Objective-C and Swift, which automates and simplifies the process of using 3rd-party libraries like SmartlingContextKit in your projects. See the CocoaPods ["Getting Started" guide][cocoapods-guide] for more information.
+
+#### Podfile
+
+```
+pod 'SmartlingContextKit', :configurations => ['Debug']
+```
+
+### Download Framework
+
+_TODO: Need to document how to install into project and which frameworks must be linked._
+
+
+
+[cocoapods]: http://cocoapods.org
+[cocoapods-guide]: http://guides.cocoapods.org/using/getting-started.html
+[dashboard]: https://dashboard.smartling.com/settings/api.htm
