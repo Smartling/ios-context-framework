@@ -4,7 +4,12 @@ Captures context from a native iOS application and uploads it to Smartling's tra
 
 ## Translation Context for iOS
 
-Smartling Context Kit provides the capability to capture native iOS application views and render and associate those views with 
+Smartling Context Kit provides the capability to capture native iOS application views for the purpose of providing context for your source content that will be shown in the Smartling Translation Interface.
+Smartling analyzes uploaded views for context and matches strings in a Smartling project.  When Smartling
+finds a match, the captured views become the visual context that users see in the Smartling Translation
+Interface. Smartling will not create any new content from the views uploaded to the context matching service,
+and every unique string in Smartling can have only one context.
+
 ## Getting Started
 
 If you don't yet have a Smartling account, sign up at [Smartling.com](http://www.smartling.com).
