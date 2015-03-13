@@ -1,6 +1,0 @@
-framework module SmartlingContextKit {
-  umbrella header "SmartlingContextKit.h"
-
-  export *
-  module * { export * }
-}
