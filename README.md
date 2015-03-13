@@ -52,6 +52,19 @@ pod 'SmartlingContextKit', :configurations => ['Debug']
 _TODO: Need to document how to install into project and which frameworks must be linked._
 
 
+### Contextualizing strings in a Smartling project
+
+**1)** Make sure your resource files are uploaded to your Smartling project. See our [help center](http://support.smartling.com/hc/en-us/articles/204270618) for more detail on managing your resource files in Smartling.
+
+**2)** Ensure that your ProjectID and APIKey are correctly entered in the Smartling.plist file in your main project
+
+**3)** Launch your app in a test environment. Click the ‘HI’ button on any screen to capture context for that screen.
+
+![Image of Yaktocat]
+(http://s3.postimg.org/t0euku2yb/Native_App_Context.png)
+
+**4)** Smartling will search for matching strings in your Smartling project and use the snapshot you just took to show dynamic context for those strings.
+
 
 [cocoapods]: http://cocoapods.org
 [cocoapods-guide]: http://guides.cocoapods.org/using/getting-started.html
