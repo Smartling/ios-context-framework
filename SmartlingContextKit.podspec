@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SmartlingContextKit'
-  s.version = '0.9.0'
+  s.version = '0.9.1'
   s.summary = 'Provides powerful, yet simple to implement, over-the-air localization for your iOS App'
   s.license = {"type"=>"Commercial", "file"=>"LICENSE.md"}
   s.authors = {"Scott Rossillo"=>"srossillo@smartling.com"}
