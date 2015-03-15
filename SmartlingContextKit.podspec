@@ -1,11 +1,10 @@
 Pod::Spec.new do |s|
   s.name = 'SmartlingContextKit'
-  s.version = '0.9.0'
-  s.summary = 'Provides powerful, yet simple to implement, over-the-air localization for your iOS App'
+  s.version = '0.9.3'
+  s.summary = 'Captures context from native iOS applications into Smartling TMS'
   s.license = {"type"=>"Commercial", "file"=>"LICENSE.md"}
   s.authors = {"Scott Rossillo"=>"srossillo@smartling.com"}
-  s.homepage = 'http://smartling.com/SmartlingContextKit'
-  s.description = 'Provides powerful, yet simple to implement, over-the-air localization for your iOS App'
+  s.homepage = 'https://github.com/Smartling/ios-context-framework'
   s.social_media_url = 'https://twitter.com/smartling'
   s.frameworks = ["CFNetwork", "Foundation", "MobileCoreServices", "Security", "SystemConfiguration"]
   s.requires_arc = true
