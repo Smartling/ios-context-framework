@@ -73,7 +73,23 @@ If you require further assistance, please refer to Apple's [Guide to Configurati
 
 **4)** Smartling will search for matching strings in your Smartling project and use the snapshot you just took to show dynamic context for those strings.
 
+
+### Automating Context Capture
+
+If you're [Automating UI Testing][apple-automating-ui], you can capture context programatically from your UI testing script. Use the following code snippet to capture context for each view:
+
+```
+var appWindow = target.frontMostApp().mainWindow();
+appWindow.buttons()["Smartling Capture Context"].tap();
+```
+
+Please keep in mind:
+
+1. UIAlertViews and UIActionSheets are captured automatically. Do not call `.tap()` after showing one of these views.
+2. Only `.tap()` the context capture button once per view. The button will be removed after being tapped.
+
 [apple-static-libs]: https://developer.apple.com/library/ios/technotes/iOSStaticLibraries/Articles/configuration.html
+[apple-automating-ui]: https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/UsingtheAutomationInstrument/UsingtheAutomationInstrument.html
 [cocoapods]: http://cocoapods.org
 [cocoapods-guide]: http://guides.cocoapods.org/using/getting-started.html
 [dashboard]: https://dashboard.smartling.com/settings/api.htm
