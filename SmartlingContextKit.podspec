@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SmartlingContextKit'
-  s.version = '0.9.3'
+  s.version = '0.9.3-develop'
   s.summary = 'Captures context from native iOS applications into Smartling TMS'
   s.license = {"type"=>"Commercial", "file"=>"LICENSE.md"}
   s.authors = {"Scott Rossillo"=>"srossillo@smartling.com"}
