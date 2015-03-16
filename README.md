@@ -58,6 +58,8 @@ pod 'SmartlingContextKit', :configurations => ['Debug']
    3. Security
    4. SystemConfiguration
 
+If you require further assistance, please refer to Apple's [Guide to Configurating Your Application][apple-static-libs].
+
 ## Contextualizing strings in a Smartling project
 
 **1)** Make sure your resource files are uploaded to your Smartling project. See our [help center](http://support.smartling.com/hc/en-us/articles/204270618) for more detail on managing your resource files in Smartling.
@@ -71,7 +73,7 @@ pod 'SmartlingContextKit', :configurations => ['Debug']
 
 **4)** Smartling will search for matching strings in your Smartling project and use the snapshot you just took to show dynamic context for those strings.
 
-
+[apple-static-libs]: https://developer.apple.com/library/ios/technotes/iOSStaticLibraries/Articles/configuration.html
 [cocoapods]: http://cocoapods.org
 [cocoapods-guide]: http://guides.cocoapods.org/using/getting-started.html
 [dashboard]: https://dashboard.smartling.com/settings/api.htm
