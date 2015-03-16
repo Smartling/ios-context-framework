@@ -49,10 +49,16 @@ pod 'SmartlingContextKit', :configurations => ['Debug']
 
 ### Download Framework
 
-_TODO: Need to document how to install into project and which frameworks must be linked._
+1. Download the [latest release][framework-release] of Smartling Context Kit.
+2. Unzip the release and drag `SmartlingContextKit.framework` into your project's Framework's folder
+3. Adding the "-ObjC" Linker Flag (see a [screenshot][objcflag])
+4. Make sure to link against the following iOS Framworks:
+   1. CFNetwork
+   2. MobileCoreServices
+   3. Security
+   4. SystemConfiguration
 
-
-### Contextualizing strings in a Smartling project
+## Contextualizing strings in a Smartling project
 
 **1)** Make sure your resource files are uploaded to your Smartling project. See our [help center](http://support.smartling.com/hc/en-us/articles/204270618) for more detail on managing your resource files in Smartling.
 
@@ -69,3 +75,5 @@ _TODO: Need to document how to install into project and which frameworks must be
 [cocoapods]: http://cocoapods.org
 [cocoapods-guide]: http://guides.cocoapods.org/using/getting-started.html
 [dashboard]: https://dashboard.smartling.com/settings/api.htm
+[framework-release]: https://github.com/Smartling/ios-context-framework/releases/latest
+[objcflag]: http://docs.millennialmedia.com/iOS-SDK/iOSAddingLinkerFlag.html
