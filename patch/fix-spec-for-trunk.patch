@@ -1,0 +1,30 @@
+From 3cd809bfe879bddfd3bcbedce98759b856ac074c Mon Sep 17 00:00:00 2001
+From: Scott Rossillo <srossillo@smartling.com>
+Date: Tue, 17 Mar 2015 11:35:54 -0400
+Subject: [PATCH] Update SmartlingContextKit.podspec for trunk
+
+---
+ SmartlingContextKit.podspec | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/SmartlingContextKit.podspec b/SmartlingContextKit.podspec
+index 375a9e5..4b632ca 100644
+--- a/SmartlingContextKit.podspec
++++ b/SmartlingContextKit.podspec
+@@ -8,12 +8,11 @@ Pod::Spec.new do |s|
+   s.social_media_url = 'https://twitter.com/smartling'
+   s.frameworks = ["CFNetwork", "Foundation", "MobileCoreServices", "Security", "SystemConfiguration"]
+   s.requires_arc = true
+-  s.source = {}
++  s.source = { :git => 'https://github.com/Smartling/ios-context-framework.git', :tag => '0.10.0' }
+ 
+   s.platform = :ios, '8.0'
+   s.ios.platform             = :ios, '8.0'
+   s.ios.preserve_paths       = 'ios/SmartlingContextKit.framework'
+   s.ios.public_header_files  = 'ios/SmartlingContextKit.framework/Versions/A/Headers/*.h'
+-  s.ios.resource             = 'ios/SmartlingContextKit.framework/Versions/A/Resources/**/*'
+   s.ios.vendored_frameworks  = 'ios/SmartlingContextKit.framework'
+ end
+-- 
+2.3.2
+
