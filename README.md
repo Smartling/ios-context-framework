@@ -73,6 +73,10 @@ If you require further assistance, please refer to Apple's [Guide to Configurati
 
 **4)** Smartling will search for matching strings in your Smartling project and use the snapshot you just took to show dynamic context for those strings.
 
+## Feedback
+
+iOS Context is currently in beta. That means we need your feedback. Please send any issues or suggestions to ioscontext@smartling.com. If context for a particular string is unsatisfactory, please send a screenshot or a dashboard link.
+
 
 ### Automating Context Capture
 
