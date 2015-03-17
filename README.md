@@ -73,11 +73,6 @@ If you require further assistance, please refer to Apple's [Guide to Configurati
 
 **4)** Smartling will search for matching strings in your Smartling project and use the snapshot you just took to show dynamic context for those strings.
 
-## Feedback
-
-iOS Context is currently in beta. That means we need your feedback. Please send any issues or suggestions to ioscontext@smartling.com. If context for a particular string is unsatisfactory, please send a screenshot or a dashboard link.
-
-
 ### Automating Context Capture
 
 If you're [Automating UI Testing][apple-automating-ui], you can capture context programatically from your UI testing script. Use the following code snippet to capture context for each view:
@@ -91,6 +86,11 @@ Please keep in mind:
 
 1. UIAlertViews and UIActionSheets are captured automatically. Do not call `.tap()` after showing one of these views.
 2. Only `.tap()` the context capture button once per view. The button will be removed after being tapped.
+
+
+## Feedback
+
+iOS Context is currently in beta. That means we need your feedback. Please send any issues or suggestions to ioscontext@smartling.com. If context for a particular string is unsatisfactory, please send a screenshot or a dashboard link.
 
 [apple-static-libs]: https://developer.apple.com/library/ios/technotes/iOSStaticLibraries/Articles/configuration.html
 [apple-automating-ui]: https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/UsingtheAutomationInstrument/UsingtheAutomationInstrument.html
