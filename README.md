@@ -23,7 +23,7 @@ Create file named Smartling.plist in your main project. The contents should be s
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>captureEnabled</key>
+	<key>enabled</key>
 	<true/>
 	<key>apiKey</key>
 	<string>your-key-here</string>
@@ -32,6 +32,9 @@ Create file named Smartling.plist in your main project. The contents should be s
 </dict>
 </plist>
 ```
+
+Optionally, you can omit `enabled` or set it to `<false/>` and programatically enable context capture
+(described below).
 
 _Note: You can find your Project Id and API Key under [Project Settings -> API][dashboard] in the Smartling Dashboard._
 
@@ -87,6 +90,38 @@ Please keep in mind:
 1. UIAlertViews and UIActionSheets are captured automatically. Do not call `.tap()` after showing one of these views.
 2. Only `.tap()` the context capture button once per view. The button will be removed after being tapped.
 
+### Enabling or Disabling the Context Capturing Library at Runtime
+
+As of release 0.11.0, you may enable or disable Smartling Context Capturing Library while your application is
+running using notifications. 
+
+#### Enabling Context Capturing Library
+
+Objective-C:
+
+```
+[[NSNotificationCenter defaultCenter] postNotificationName:@"SMContextCaptureEnable" object:self];
+```
+
+Swift:
+
+```
+NSNotificationCenter.defaultCenter().postNotificationName("SMContextCaptureEnable", object: self)
+```
+
+#### Disabling Context Capturing Library
+
+Objective-C:
+
+```
+[[NSNotificationCenter defaultCenter] postNotificationName:@"SMContextCaptureDisable" object:self];
+```
+
+Swift:
+
+```
+NSNotificationCenter.defaultCenter().postNotificationName("SMContextCaptureDisable", object: self)
+```
 
 ## Feedback
 
