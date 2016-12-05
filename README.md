@@ -1,5 +1,7 @@
 # Smartling Context Capturing Library
 
+**Note: this library is incomptable with the latest version of iOS. Smartling will be releasing an updated context capture framework with improved string matching capabilities.**
+
 Captures context from a native iOS application and uploads it to Smartling's translation management system. Check out a [demo video](https://drive.google.com/file/d/0B1aq7yx63dc1RlJySmcyQ3BxR0E/view?usp=sharing) and see instructions below.
 
 ## Translation Context for iOS
