@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SmartlingContextKit'
-  s.version = '0.11.0'
+  s.version = '0.12.0'
   s.deprecated_in_favor_of = 'Smartling'
   s.summary = 'Captures context from native iOS applications into Smartling TMS'
   s.license = {"type"=>"Commercial", "file"=>"LICENSE.md"}
